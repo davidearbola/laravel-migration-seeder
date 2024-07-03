@@ -12,7 +12,7 @@ class PageController extends Controller
     {
         $trainList = Train::all();
         $data = [
-            'train' => $trainList
+            'trains' => $trainList
         ];
         return view('home', $data);
     }
